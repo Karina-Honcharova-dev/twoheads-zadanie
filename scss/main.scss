@@ -321,6 +321,20 @@ body{
 	bottom: 0;
 	right: 44px;
 }
+.dots{
+	margin-top: 67.7px;
+	padding-left: 60px;
+}
+.active-dot{
+	background-color: #4E74FF!important;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #DEDEDE;
+  border-radius: 50%;
+  display: inline-block;
+}
 @media only screen and (max-width: 835px) {
   .navbar-nav > li > a{
   	margin-right: 0px;
