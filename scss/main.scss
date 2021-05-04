@@ -1,0 +1,392 @@
+/* ==========================================================================
+   Main SCSS file
+   ========================================================================== */
+
+/* Import
+   ========================================================================== */
+    @import '00-settings/*';
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+/* Variables
+   ========================================================================== */
+   $main: #4e74ff;
+   $blue-color:#4E74FF;
+   $secondary-color: #8C909D;
+
+body{
+	font-family: Open Sans;
+	background-color: #F5F5F5;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.navbar-header {
+	padding-left: 45px;
+}
+.logo{
+	background: white;
+	border: 4px solid $blue-color;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+}
+.nav-notification{
+	background-color: $secondary-color;
+	padding: 5px;
+	border-radius: 50%;
+	color: white;
+	margin-left: 8px;
+}
+.navbar-item{
+	font-weight: bold;
+	color: $secondary-color;
+	padding-left: 0px;
+}
+.navbar-nav > li > a{
+	padding-left: 0px !important;
+	padding-bottom: 5px !important;
+	margin-right: 16px;
+}
+.nav > li > a:hover {
+	background-color: transparent!important;
+}
+.navbar-right{
+	margin-right: 30px!important;
+}
+.active{
+	color: $blue-color;
+}
+
+.container-fluid ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.container-fluid ul li.active-link .underline {
+	width: 40%;
+	background-color:  $blue-color;
+	margin-left: 0px;
+}
+
+.container-fluid ul li:hover .underline {
+	background-color:  $blue-color;
+	width: 40%;
+	margin-left: 0px;
+}
+
+.container-fluid ul li:hover a {
+}
+
+.container-fluid ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+.nav-user-picture{
+	width: 30px;
+
+}
+.home{
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.user{
+	font-weight: bold;
+	vertical-align: middle;
+	margin-right: 36px;
+	margin-left: 9px;
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width:  0px 0px 38vw 48vw;;
+	border-color: transparent transparent #007bff transparent;
+	line-height: 0px;
+	_border-color: #000000 #000000 #007bff #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	bottom: 0px !important;
+	right: 0px;
+	position: fixed;
+
+}
+
+.header-text{
+	font-weight: bold;
+	color: $blue-color;
+	font-size: 64px;
+	padding-top: 150px;
+	padding-left: 45px;
+}
+#calendar{
+	width: max-content;
+  margin:0 auto;
+  font-family:'Open Sans',sans-serif;
+  text-align:center;
+  color:#555;
+  box-shadow:0 0 50px -14px rgba(0,0,0,.8);
+  position: relative;
+  z-index: 9;
+  opacity: 92%;
+  border: #42444D 10px solid;
+  border-radius: 10px;
+  margin-top: 15vh;
+}
+
+#calendar h1{
+  background:#ee3333;
+  border-radius:5px 5px 0 0;
+  
+  font-size:140%;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#fff;
+  cursor:default;
+  text-shadow:0 0 10px rgba(0,0,0,.8);
+}
+
+#calendar table{
+  border-spacing:0;
+}
+
+#calendar td{
+  width:38px;
+  height:38px;
+  background: #42444D;;
+  padding:6px;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+  color: $blue-color;
+}
+
+
+
+#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ * {
+  background:#42444D;;
+  color: #42444D;
+  cursor: default;
+}
+
+
+#calendar .current{
+
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+#calendar .hastask{
+  font-weight:700;
+}
+
+#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 0px;}
+#calendar tr:last-of-type td:last-of-type{border-radius:0 0 0px 0;}
+
+
+.calendar-main-header{
+	background-color: #42444D;
+	
+}
+.calendar-header-text{
+	font-weight: bold;
+	color: $blue-color;
+	font-size: 140px;
+	margin-bottom: 0px;
+}
+.nav-notification{
+	background-color: $blue-color;
+	padding: 5px;
+	border-radius: 50%;
+	color: white;
+	margin-left: 8px;
+}
+.calendar-header-secondary-text{
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+.menu{
+	align-content: center;
+	align-items: center;
+	display: flex;
+	padding-left: 45px;
+	margin-top: 53px;
+}
+.rad-menu-item{
+	position:relative;
+	z-index:5;
+	display:inline-block;
+	float: left;
+	margin-right: 22px;
+}
+.rad-menu-badge{
+	position:absolute;
+	width: 33px;
+	height: 33px;	
+	line-height: 25px;
+	font-weight:bold;
+	color: white;
+	border-radius:100%;
+	font-size:12px;
+	background: $blue-color;
+	display:inline-block;
+	text-align:center;
+	top:-5px;
+	z-index:1;
+	left: 45px;
+	border: 4px solid;
+	
+}
+.menu-item-text{
+	color: #42444D;
+	font-weight: bold;
+	font-size: 20px;
+}
+.skills__container{
+	margin-top: 37.5px;
+}
+.skills__text{
+  margin-bottom: var(--mb-4);
+}
+.skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  padding-left: 0px;
+  width: 160.01px;
+
+
+}
+.skills-picture{
+	max-width: 29.33px;
+	max-height: 29.33;
+	float: left;
+	margin-left: 60px;
+	margin-right: 14px;
+}
+.skills__icon{
+  font-size: 2rem;
+  margin-right: 20px;
+  color: blue;
+}
+.skills__name{
+  display: flex;
+  align-items: center;
+
+}
+.skills__bar{
+	width: 160.01px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: .25rem;
+	border-radius: .5rem;
+	z-index: var(--z-back);
+	background-color: #D7DBE8;
+}
+.skills__bar__progress{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+.skills__html{
+  width: 78px;
+}
+.skills__css{
+	width: 113px;
+}
+.triangle-box{
+	position: initial;
+	float: right;
+}
+.triangle-inside-text{
+	position: fixed;
+	z-index: 12;
+	display: inline;
+	color: white;
+	bottom: 0;
+	right: 44px;
+}
+@media only screen and (max-width: 835px) {
+  .navbar-nav > li > a{
+  	margin-right: 0px;
+  }
+  .triangle{
+  	position: absolute;
+  	border-width:  0px 0 66vw 64vw;
+
+  }
+  .triangle-inside-text{
+  	position: absolute;
+  }
+  .skills{
+  	margin-bottom: 80px;
+  }
+
+  
+}
+@media only screen and (max-width: 767px) {
+  .nav > li > a{
+  	padding: 10px 0px 0px 0px !important;
+  }
+  .navbar-nav > li > a{
+  	margin-right: 0px;
+  }
+  .triangle{
+  	position: absolute;
+  	border-width:  0 0 67vw 100vw;
+  }
+  .navbar-nav{
+  	text-align: center;
+  	margin-right: 0px!important;
+  }
+ .container-fluid ul li.active-link .underline {
+ 	width: 10%;
+ 	background-color:  $blue-color;
+	margin-left: auto; 	
+ }
+
+ .container-fluid ul li:hover .underline {
+ 	background-color:  $blue-color;
+ 	width: 10%;
+ 	margin-left: auto; 
+ 	
+ }
+.header-text{
+	font-size: 50px;
+	padding-top: 80px;
+}
+  .triangle-inside-text{
+  	position: absolute;
+  }
+  #calendar{
+  	margin-top: 6vh;
+  	margin-bottom: 8vh;
+  }
+  
+}
+@media only screen and (max-width: 490px) {
+
+	.triangle{
+	  	position: absolute;
+	  	
+	  }
+ 	.triangle-inside-text{
+ 		text-align: end;
+		width: 65%;
+ 	}
+  
+}
