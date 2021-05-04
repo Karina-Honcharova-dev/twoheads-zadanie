@@ -345,6 +345,10 @@ body{
   .navbar-nav > li > a{
   	margin-right: 0px;
   }
+  .navbar-header{
+	padding-left: calc(50% - 15px);
+  }
+
   .triangle{
   	position: absolute;
   	border-width:  0 0 67vw 100vw;
@@ -379,7 +383,22 @@ body{
   
 }
 @media only screen and (max-width: 490px) {
-
+	.header-text{
+		font-size: 32px;
+		padding-bottom: 30px;
+	}
+	.rad-menu-badge{
+		left: 26px;
+		border: 2px solid;
+		width: 27px;
+		height: 27px;
+	}
+	.rad-menu-img{
+		width: 45px;
+	}
+	.menu{
+		margin-top: 20px;
+	}
 	.triangle{
 	  	position: absolute;
 	  	
