@@ -75,7 +75,7 @@ h1, h2, h3 {
 	  border-radius: 50%;
 	  height: 30px;
 	  width: 30px;
-	  margin: 0 11px 136px 2.3px;
+	  margin: 32px 62px 0px 0px;
 	}
 
 	.nav-notification {
@@ -84,19 +84,22 @@ h1, h2, h3 {
 	  color: white;
 	  width: 24px;
 	  height: 24px;
-	  margin: 3px 30px 139px 9px;
-	  padding: 3px 5px 4px;
+	  margin: 0px 30px 139px 14px;
 	  background-color: #8c909d;
 	  border-radius: 50%;
 	  color: white;
-	  margin-left: 8px;
+	  display: inline-block;
+	  line-height: 17px;
+
+
+
 	}
 
 	.navbar-item {
 	  font-weight: bold;
 	  color: #8C909D;
 	  padding-left: 0px;
-	  margin: 6px 30px 0 22px;
+	  margin: 38px 30px 0 0px;
 	  font-family: OpenSans;
 	  font-size: 14px;
 	  font-weight: bold;
@@ -110,7 +113,7 @@ h1, h2, h3 {
 	.navbar-nav > li > a {
 	  padding-left: 0px !important;
 	  padding-bottom: 5px !important;
-	  margin-right: 16px;
+
 	}
 
 	.nav > li > a:hover {
@@ -136,7 +139,7 @@ h1, h2, h3 {
 
 	  &.current .underline {
 	    width: 20px;
-  		margin: 1px 52px 139px 23px;
+  		margin: 1px 0px 0px 0px;
 	    background-color: #4e74ff;
 	   
 	  }
@@ -145,7 +148,7 @@ h1, h2, h3 {
 	    .underline {
 	      background-color: #4e74ff;
 	      width: 20px;
-  			margin: 1px 52px 139px 23px;
+  			margin: 1px 0px 0px 0px;
 	    }
 
 	    a {}
@@ -192,7 +195,7 @@ h1, h2, h3 {
   font-weight: bold;
   color: #4e74ff;
   font-size: 64px;
-  padding-top: 200px;
+  padding-top: 198px;
   padding-left: 45px;
 }
 
@@ -277,11 +280,18 @@ h1, h2, h3 {
 }
 
 .nav-notification {
-  background-color: #4e74ff;
-  padding: 5px;
-  border-radius: 50%;
-  color: white;
-  margin-left: 8px;
+ background-color: #8C909D;
+	border-radius: 50%;
+	color: white;
+	width: 24px;
+	height: 24px;
+	margin: 0px 30px 139px 14px;
+	background-color: #8c909d;
+	border-radius: 50%;
+	color: white;
+	display: inline-block;
+	line-height: 17px;
+	padding: 3px 5px 4px;
 }
 
 .calendar-header-secondary-text {
