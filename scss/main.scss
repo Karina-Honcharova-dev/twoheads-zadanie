@@ -25,6 +25,7 @@ h1, h2, h3 {
 .container-fluid{
 	padding-left: 45px!important;
 	padding-right: 45px!important;
+	padding-top: 30px!important;
 }
 .navbar{
 	.navbar, .dropdown-menu {
@@ -79,7 +80,7 @@ h1, h2, h3 {
 	  border-radius: 50%;
 	  height: 30px;
 	  width: 30px;
-	  margin: 22px 62px 0px 0px;
+	  margin: 0px 46px 0px 0px;
 	}
 
 	.nav-notification {
@@ -88,7 +89,7 @@ h1, h2, h3 {
 		color: white;
 		width: 24px;
 		height: 24px;
-		margin: 0px 30px 139px 14px;
+		margin: -3px 0px 0px 9px;
 		background-color: #8c909d;
 		border-radius: 50%;
 		color: white;
@@ -104,7 +105,7 @@ h1, h2, h3 {
 	  font-weight: bold;
 	  color: #8C909D;
 	  padding-left: 0px;
-	  margin: 38px 30px 0 0px;
+	  margin: 8px 27px 0 0px;
 	  font-family: OpenSans;
 	  font-size: 14px;
 	  font-weight: bold;
@@ -124,9 +125,13 @@ h1, h2, h3 {
 	.nav > li > a:hover {
 	  background-color: transparent !important;
 	}
+	.navbar-brand{
+		padding-top: 0px;
+	}
 
 	.navbar-right {
-	  margin-right: 30px !important;
+	  margin-right: 0px !important;
+	  margin: 0px 30px 0 0;
 	}
 
 	.active {
@@ -200,7 +205,12 @@ h1, h2, h3 {
   font-weight: bold;
   color: #4e74ff;
   font-size: 64px;
-  padding-top: 198px;
+  padding-top: 138px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
   
 }
 
@@ -216,7 +226,7 @@ h1, h2, h3 {
   opacity: 92%;
   border: #42444D 10px solid;
   border-radius: 10px;
-  margin-top: 200px;
+  margin-top: 148px;
 
 
   table {
@@ -282,6 +292,7 @@ h1, h2, h3 {
   color: #4e74ff;
   font-size: 140px;
   margin-bottom: 0px;
+  line-height: 1;
 }
 
 .calendar-notification {
@@ -307,6 +318,7 @@ h1, h2, h3 {
   font-weight: bold;
   color: white;
   text-transform: uppercase;
+  padding-top: 18px;
 }
 
 .menu {
