@@ -465,13 +465,17 @@ h1, h2, h3 {
 }
 
 .triangle-inside-text {
-  position: fixed;
+  position: absolute;
   z-index: 12;
   display: inline;
   color: white;
   bottom: 0;
   right: 44px;
   font-weight: 500;
+  right: 15px;
+	font-weight: 500;
+	font-size: 12px;
+	margin-bottom: 26px;
 }
 
 .inside-text-b {
