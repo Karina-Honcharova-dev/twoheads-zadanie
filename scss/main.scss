@@ -340,6 +340,21 @@ h1, h2, h3 {
   padding-left: 0px;
   margin-top: 92px;
 }
+.menu {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 0px;
+  margin-top: 92px;
+}
+.menu-1 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 0px;
+  margin-top: 92px;
+  margin-left: -65px;
+}
 
 .rad-menu-item {
   position: relative;
@@ -348,6 +363,7 @@ h1, h2, h3 {
   float: left;
   margin-right: 22px;
 }
+
 
 .rad-menu-badge {
   position: absolute;
@@ -371,6 +387,7 @@ h1, h2, h3 {
   color: #42444D;
   font-weight: bold;
   font-size: 20px;
+  padding-bottom: 16px;
 }
 
 .skills__container {
