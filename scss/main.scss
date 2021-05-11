@@ -28,8 +28,10 @@ h1, h2, h3 {
 	padding-top: 30px!important;
 }
 .navbar{
+	background-color: white;
+
 	.navbar, .dropdown-menu {
-	  background: white;
+	  background-color: white;
 	  border: none;
 
 	}
@@ -37,8 +39,9 @@ h1, h2, h3 {
 	.nav {
 	  > li > a {
 	    &:focus, &:hover {
-	      border-bottom: 3px solid transparent;
+	     
 	      background: none;
+	      background-color: white;
 	    }
 	  }
 
@@ -90,12 +93,12 @@ h1, h2, h3 {
 		color: white;
 		width: 24px;
 		height: 24px;
-		margin: -3px 0px 0px 9px;
-		background-color: #8c909d;
+		margin: -8px 0 0 9px;
+		background-color: #4e74ff;
 		border-radius: 50%;
-		color: white;
+		color: #fff;
 		display: inline-block;
-		line-height: 17px;
+		line-height: 21px;
 		padding: 3px 5px 4px;
 
 
@@ -185,6 +188,7 @@ h1, h2, h3 {
 	  vertical-align: middle;
 	  margin-right: 36px;
 	  margin-left: 9px;
+	  color: #4e74ff;
 	}
 }
 
@@ -216,8 +220,8 @@ h1, h2, h3 {
 }
 
 #calendar {
-  width: 350px;
-
+  width: 350px; 
+  background-image: linear-gradient(to bottom, #4e74ff, #4e74ff);
   margin: 0 auto;
   font-family: 'Open Sans',sans-serif;
   text-align: center;
@@ -333,13 +337,7 @@ h1, h2, h3 {
   padding-bottom: 24px;
 }
 
-.menu {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  padding-left: 0px;
-  margin-top: 92px;
-}
+
 .menu {
   align-content: center;
   align-items: center;
@@ -363,9 +361,20 @@ h1, h2, h3 {
   display: inline-block;
   float: left;
   margin-right: 22px;
+	.circle-rad-menu{
+		 width: 64px;
+		  height: 64px;
+		  padding: 16px 16px 17px 17px;
+		  background-color: #42444d;
+		  border-radius: 50%;
+		  display: block;
+		.task-icon{
+			width: 31px;
+			height: 31px;
+			object-fit: contain;
+			}
+	}
 }
-
-
 .rad-menu-badge {
   position: absolute;
   width: 33px;
@@ -388,7 +397,7 @@ h1, h2, h3 {
   color: #42444D;
   font-weight: bold;
   font-size: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .skills__container {
@@ -419,11 +428,7 @@ h1, h2, h3 {
   margin-top: 5px;
 }
 
-.skills__icon {
-  font-size: 2rem;
-  margin-right: 20px;
-  color: blue;
-}
+
 
 .skills__name {
   display: flex;
@@ -439,24 +444,39 @@ h1, h2, h3 {
   border-radius: .5rem;
   z-index: var(--z-back);
   background-color: #D7DBE8;
-}
 
-.skills__bar__progress {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: blue;
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
 
-.skills__html {
-  width: 78px;
-}
+	.skills__bar__progress {
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  background-color: blue;
+	  height: .25rem;
+	  border-radius: .5rem;
+	  z-index: var(--z-back);
+	}
 
-.skills__css {
-  width: 113px;
+	.skills__html {
+	  width: 78px;
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  background-color: blue;
+	  height: .25rem;
+	  border-radius: .5rem;
+	  z-index: var(--z-back);
+	}
+
+	.skills__css {
+	  width: 113px;
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  background-color: blue;
+	  height: .25rem;
+	  border-radius: .5rem;
+	  z-index: var(--z-back);
+}
 }
 
 .triangle-box {
@@ -525,6 +545,7 @@ h1, h2, h3 {
   .triangle {
     position: absolute;
     border-width: 0px 0 66vw 64vw;
+    margin-right: -30px;
   }
 
   .triangle-inside-text {
@@ -533,6 +554,14 @@ h1, h2, h3 {
 
   .skills {
     margin-bottom: 80px;
+  }
+  .menu{
+  	margin-bottom:0px;
+  }
+  .menu-1{
+  	margin-left: 0px;
+  	margin-top: 30px;
+  	margin-bottom: 30px;
   }
 }
 
@@ -552,7 +581,7 @@ h1, h2, h3 {
   .triangle {
     position: absolute;
     border-width: 0 0 67vw 100vw;
-    width: 704px;
+	width: 545px;
   	height: 694px;
 
   }
@@ -575,7 +604,7 @@ h1, h2, h3 {
   .container-fluid ul li:hover .underline {
     background-color: #4e74ff;
     width: 10%;
-    margin-left: auto;
+    margin-left: 0px;
   }
 
   .header-text {
@@ -594,6 +623,10 @@ h1, h2, h3 {
 
   .dot {
     display: none;
+  }
+   .menu-1{
+  	margin-left: 0px;
+  	margin-top: 92px;
   }
 }
 
@@ -614,12 +647,25 @@ h1, h2, h3 {
     width: 45px;
   }
 
+	#calendar{
+		margin-bottom: 10vh;
+	}
   .menu {
     margin-top: 20px;
   }
+  .menu-1 {
+	  align-content: center;
+	  align-items: center;
+	  display: flex;
+	  padding-left: 0px;
+	  margin-top: 20px;
+	  margin-left: 0px;
+
+	}
 
   .triangle {
     position: absolute;
+    width: 30px;
   }
 
   .triangle-inside-text {
