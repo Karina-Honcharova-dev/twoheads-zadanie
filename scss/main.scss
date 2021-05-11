@@ -31,6 +31,7 @@ h1, h2, h3 {
 	.navbar, .dropdown-menu {
 	  background: white;
 	  border: none;
+
 	}
 
 	.nav {
@@ -191,7 +192,7 @@ h1, h2, h3 {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0px 0px 44vw 48vw;
+  border-width: 0px 0px 41vw 48vw;
   border-color: transparent transparent #007bff transparent;
   line-height: 0px;
   _border-color: #000000 #000000 #007bff #000000;
@@ -216,7 +217,7 @@ h1, h2, h3 {
 
 #calendar {
   width: 350px;
-  height: 455px;
+
   margin: 0 auto;
   font-family: 'Open Sans',sans-serif;
   text-align: center;
@@ -228,7 +229,6 @@ h1, h2, h3 {
   border:  #42444d solid;
   border-radius: 10px;
   margin-top: 148px;
-  padding-bottom: 25px;
   background: #42444d;
 
 
@@ -241,16 +241,22 @@ h1, h2, h3 {
     height: 38px;
     background: #42444D;
     padding-top: 21px;
-    padding-left: 36px;
-    padding-right:  10px;
     padding-left:  0px;
     cursor: pointer;
     transition: background .3s;
     -webkit-transition: background .3s;
     color: #4e74ff;
-    margin: 21px 6px 21px 28px;
+    
+    
   }
-
+  .calendar-mn{
+  	padding-left: 12px;
+  
+  }
+  .calendar-sn{
+  	padding-right: 26px;
+  	padding-left: 4px;
+  }
   .lastmonth {
     background: #42444D;
     color: #42444D;
@@ -273,6 +279,8 @@ h1, h2, h3 {
     font-weight: 700;
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 25px;
+    padding-left: 24px;
   }
 
   .hastask {
@@ -480,6 +488,7 @@ h1, h2, h3 {
     position: absolute;
   }
 
+
   .triangle-inside-text {
     position: absolute;
   }
@@ -520,6 +529,9 @@ h1, h2, h3 {
   .triangle {
     position: absolute;
     border-width: 0 0 67vw 100vw;
+    width: 704px;
+  	height: 694px;
+
   }
 
   .navbar-nav {
