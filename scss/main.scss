@@ -11,10 +11,10 @@
    ========================================================================== */
  $blue-color: #4e74ff;
  $light-grey: #8c909d;
- $dark-grey: $dark-grey;
+ $dark-grey:  #42444d;
 
 body {
-  font-family: Open Sans;
+  font-family:'Open Sans', sans-serif;;
   background-color: #F5F5F5;
   overflow-x: hidden;
   background-color: $blue-color;
@@ -100,8 +100,8 @@ h1, h2, h3 {
 		border-radius: 50%;
 		color: #fff;
 		display: inline-block;
-		line-height: 21px;
-		padding: 3px 5px 4px;
+		line-height: 24px;
+		padding-left: 4px;
 
 
 
@@ -112,7 +112,7 @@ h1, h2, h3 {
 	  color: $light-grey;
 	  padding-left: 0px;
 	  margin: 8px 27px 0 0px;
-	  font-family: OpenSans;
+	  font-family:'Open Sans', sans-serif;;
 	  font-size: 14px;
 	  font-weight: bold;
 	  font-stretch: normal;
