@@ -5,14 +5,21 @@
 
 
 /*<===========================================NAVIGATION BAR===========================================>*/
-
+h1, h2, h3 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 
 .container-fluid{
   padding-left: 45px!important;
   padding-right: 45px!important;
-  padding-top: 30px!important;
+  padding-top: 30px!important;background-color: white;
 }
 .navbar{
+    @media only screen and (max-width: 767px)  {
+       text-align: center;
+
+      }
   
   .logo {
       background: white;
@@ -21,10 +28,23 @@
       height: 30px;
       width: 30px;
       margin: 0px 46px 0px 0px;
+      @media only screen and (max-width: 905px) {
+        .logo{
+         margin-right: 3px;
+        }
+       @media only screen and (max-width: 767px)  {
+         margin-right: 0px;
+
+        }
+      }
     }
     .navbar-header {
       padding-left: 45px;
-    
+      @media only screen and (max-width: 767px) {
+       .navbar-header {
+          padding-left: calc(50% - 15px);
+        }
+      }
       .navbar-toggle {
         color: $light-grey;
       }
@@ -125,8 +145,21 @@
     color: $light-grey;
   }
 
-  .navbar-nav > li > a {
-    padding: 0px !important;
+  .navbar-nav {
+     margin-left: 0px!important;
+     
+     li > a {
+      padding: 0px !important;
+      @media only screen and (max-width: 835px) {
+         margin-right: 0px!important;
+
+      }
+      @media only screen and (max-width: 767px)  {
+          padding: 10px 0px 0px 0px !important;
+          margin-right: 0px;
+
+        }
+    }
   }
   .active {
     color: $blue-color;
@@ -144,6 +177,12 @@
       width: 20px;
       margin: 1px 0px 0px 0px;
       background-color: $blue-color;
+      @media only screen and (max-width: 767px) {
+        width: 10%;
+        background-color: $blue-color;
+        margin-left: auto;
+        margin-right: auto;
+      }
      
     }
 
@@ -152,6 +191,12 @@
         background-color: $blue-color;
         width: 20px;
         margin: 1px 0px 0px 0px;
+         @media only screen and (max-width: 767px) {
+            background-color: $blue-color;
+            width: 10%;
+            margin-left: auto;
+            margin-right: auto;
+          }
       }
 
       a {}
@@ -182,6 +227,10 @@
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
+  @media only screen and (max-width: 490px) {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
   
 }
 .menu {
@@ -191,6 +240,12 @@
   padding-left: 0px;
   margin-top: 92px;
   margin-bottom: 35px;
+  @media only screen and (max-width: 835px) {
+     margin-bottom:0px;
+  }
+  @media only screen and (max-width: 490px) {
+      margin-top: 20px;
+  }
 }
 .menu-1 {
   align-content: center;
@@ -199,6 +254,14 @@
   padding-left: 0px;
   margin-top: 92px;
   margin-left: -65px;
+  @media only screen and (max-width: 790px) {    
+      align-content: center;
+      align-items: center;
+      display: flex;
+      padding-left: 0px;
+      margin-left: 0px;
+    
+  }
 }
 .rad-menu-item {
   position: relative;
@@ -236,6 +299,14 @@
     z-index: 1;
     left: 40px;
     border: 2px solid;
+    @media only screen and (max-width: 490px) {
+      left: 43px;
+      border: 2px solid;
+      width: 27px;
+      height: 27px;
+      line-height: 24px;
+      top: -4px;
+    }
   }
 }
 .menu-item-text {
@@ -248,6 +319,9 @@
 
 /*<===========================================SKILLS CONTAINER===========================================>*/
 .skills{
+  @media only screen and (max-width: 835px) {
+    margin-bottom: 80px;
+  }
   .skills__container{
     margin-top: 37.5px;
 
@@ -326,17 +400,54 @@
 /*<===========================================SECOND PART===========================================>*/
 .triangle {
   width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0px 0px 41vw 48vw;
-  border-color: transparent transparent #007bff transparent;
-  line-height: 0px;
-  _border-color: #000000 #000000 #007bff #000000;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-  bottom: 0px !important;
-  right: 0px;
-  position: fixed;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 0px 41vw 48vw;
+    border-color: transparent transparent #007bff transparent;
+    line-height: 0px;
+    _border-color: #000000 #000000 #007bff #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    bottom: 0px !important;
+    right: 0px;
+    position: fixed;
+    @media only screen and (max-width: 905px) {
+          border-width: 0px 0 66vw 64vw;
+          position: absolute;
+        }
+    @media only screen and (max-width: 835px) {
+        position: absolute;
+        border-width: 0px 0 66vw 64vw;
+        margin-right: -30px;
+    }
+    @media only screen and (max-width: 767px) {
+        position: absolute;
+        border-width: 0 0 67vw 100vw;
+        width: 545px;
+        height: 694px;
+    }
+    @media only screen and (max-width: 490px){
+          position: absolute;
+          width: 30px;
+    }
+
 }
+    .triangle-inside-text {
+      position: absolute;
+      z-index: 12;
+      display: inline;
+      color: white;
+      bottom: 0;
+      right: 44px;
+      font-weight: 500;
+      right: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      margin-bottom: 26px;
+      .inside-text-b {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+    }
 #calendar {
   width: 350px; 
   background-image: linear-gradient(to bottom, #4e74ff, #4e74ff);
@@ -352,8 +463,9 @@
   border-radius: 10px;
   margin-top: 148px;
   background: $dark-grey;
-
-
+  @media only screen and (max-width: 490px) {
+     margin-bottom: 10vh;
+  }
   table {
     border-spacing: 0;
     td {
@@ -400,55 +512,64 @@
     padding-bottom: 25px;
     padding-left: 24px;
   }
-  }
+      .hastask {
+        font-weight: 700;
+      }
 
+      tr:last-of-type td {
+        &:first-of-type {
+          border-radius: 0 0 0 0px;
+        }
 
-
-  .hastask {
-    font-weight: 700;
-  }
-
-  tr:last-of-type td {
-    &:first-of-type {
-      border-radius: 0 0 0 0px;
+        &:last-of-type {
+          border-radius: 0 0 0px 0;
+        }
+      }
     }
+  .calendar-main-header {
+     background-color: $dark-grey;
 
-    &:last-of-type {
-      border-radius: 0 0 0px 0;
+      .calendar-header-text {
+        font-weight: bold;
+        color: $blue-color;
+        font-size: 140px;
+        margin-bottom: 0px;
+        line-height: 1;
+      }
+      .calendar-header-secondary-text {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+  
+  .calendar-table{
+    width: -moz-available;
+    .calendar-notification {
+      background-color: $blue-color;
+      border-radius: 50%;
+      color: white;
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      line-height: 17px;
+       padding: 7px 10px 10px;
     }
   }
-}
-.calendar-main-header {
-  background-color: $dark-grey;
-}
 
-.calendar-header-text {
-  font-weight: bold;
-  color: $blue-color;
-  font-size: 140px;
-  margin-bottom: 0px;
-  line-height: 1;
-}
+  }
 
-.calendar-notification {
-  background-color: $blue-color;
-  border-radius: 50%;
-  color: white;
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  line-height: 17px;
-   padding: 7px 10px 10px;
-}
-.calendar-table{
-  width: -moz-available;
-}
 
-.calendar-header-secondary-text {
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
+
+
+
+
+
+
+
+
+
