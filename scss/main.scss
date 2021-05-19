@@ -258,7 +258,7 @@ h1, h2, h3 {
   padding-left: 0px;
   margin-top: 92px;
   margin-left: -65px;
-  @media only screen and (max-width: 790px) {    
+  @media only screen and (max-width: 1000px) {    
       align-content: center;
       align-items: center;
       display: flex;
@@ -484,6 +484,7 @@ h1, h2, h3 {
     color: $blue-color;
         
   }
+
     .calendar-mn{
     padding-left: 12px;
   
@@ -513,10 +514,11 @@ h1, h2, h3 {
     font-weight: 700;
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     padding-left: 24px;
   }
-      .hastask {
+      .b-calendar{
+        padding-bottom: 23px;
         font-weight: 700;
       }
 
@@ -563,6 +565,7 @@ h1, h2, h3 {
        padding: 7px 10px 10px;
     }
   }
+
 
   }
 
