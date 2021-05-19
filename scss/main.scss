@@ -433,12 +433,12 @@ h1, h2, h3 {
     line-height: 0px;
     _border-color: #000000 #000000 #007bff #000000;
     _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-    bottom: 0px !important;
-    right: 0px;
-    position: fixed;
+    bottom: -30% !important; !important;
+   
+    position: absolute;
     @media only screen and (max-width: 1199px) {
           border-width: 0px 0 66vw 64vw;
-          position: fixed;
+          position: absolute;
           margin-right: -30px;
         margin-bottom: -100px;
         }
@@ -456,7 +456,7 @@ h1, h2, h3 {
     }
     @media only screen and (max-width: 575px){
           position: absolute;
-          width: 545px;
+          width: 473px;
           margin-bottom: -70px;
     }
     @media only screen and (max-width: 490px){
@@ -477,7 +477,7 @@ h1, h2, h3 {
       right: 15px;
       font-weight: 500;
       font-size: 12px;
-      margin-bottom: -30%;
+      margin-bottom: -10%;
        @media only screen and (max-width: 1000px) {
            display: inline;
            margin-bottom: -55px;
