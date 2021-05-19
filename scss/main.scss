@@ -335,7 +335,11 @@ h1, h2, h3 {
 
 /*<===========================================SKILLS CONTAINER===========================================>*/
 .skills{
-  
+   margin-top: 230px;
+  @media only screen and (min-width: 1200px) {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
   @media only screen and (max-width: 835px) {
     margin-top: 230px;
     margin-bottom: 80px;
@@ -434,7 +438,7 @@ h1, h2, h3 {
     position: fixed;
     @media only screen and (max-width: 1199px) {
           border-width: 0px 0 66vw 64vw;
-          position: absolute;
+          position: fixed;
           margin-right: -30px;
         margin-bottom: -100px;
         }
