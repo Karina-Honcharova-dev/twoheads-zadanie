@@ -5,6 +5,8 @@
 
 
 /*<===========================================NAVIGATION BAR===========================================>*/
+
+
 h1, h2, h3 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -28,15 +30,19 @@ h1, h2, h3 {
       height: 30px;
       width: 30px;
       margin: 0px 46px 0px 0px;
-      @media only screen and (max-width: 905px) {
+      
+       @media only screen and (max-width: 905px) {
         .logo{
-         margin-right: 3px;
+         margin-right: 70px;
+         float: left;
         }
-       @media only screen and (max-width: 767px)  {
+        @media only screen and (max-width: 767px)  {
+        .logo{
          margin-right: 0px;
+         float: none!important;
+        }
 
         }
-      }
     }
     .navbar-header {
       padding-left: 45px;
@@ -323,6 +329,7 @@ h1, h2, h3 {
 
 /*<===========================================SKILLS CONTAINER===========================================>*/
 .skills{
+  margin-top: 230px;
   @media only screen and (max-width: 835px) {
     margin-bottom: 80px;
   }
