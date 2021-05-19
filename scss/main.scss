@@ -265,13 +265,18 @@ h1, h2, h3 {
   padding-left: 0px;
   margin-top: 92px;
   margin-left: -65px;
-  @media only screen and (max-width: 1000px) {    
+  @media only screen and (max-width: 1199px) {    
       align-content: center;
       align-items: center;
       display: flex;
       padding-left: 0px;
       margin-left: 0px;
-    
+      margin-top: 20px;
+      margin-bottom: 70px;    
+  }
+  @media only screen and (max-width: 991px) {    
+      margin-top: 92px;
+      margin-bottom: 0px;    
   }
 }
 .rad-menu-item {
@@ -330,9 +335,14 @@ h1, h2, h3 {
 
 /*<===========================================SKILLS CONTAINER===========================================>*/
 .skills{
-  margin-top: 230px;
+  
   @media only screen and (max-width: 835px) {
+    margin-top: 230px;
     margin-bottom: 80px;
+  }
+   @media only screen and (max-width: 767px) {
+           margin-top: 30px;
+           margin-bottom: 1px;
   }
   .skills__container{
     margin-top: 37.5px;
@@ -411,7 +421,7 @@ h1, h2, h3 {
 
 /*<===========================================SECOND PART===========================================>*/
 .triangle {
-  width: 0;
+     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0px 0px 41vw 48vw;
@@ -422,14 +432,17 @@ h1, h2, h3 {
     bottom: 0px !important;
     right: 0px;
     position: fixed;
-    @media only screen and (max-width: 905px) {
+    @media only screen and (max-width: 1199px) {
           border-width: 0px 0 66vw 64vw;
           position: absolute;
+          margin-right: -30px;
+        margin-bottom: -100px;
         }
     @media only screen and (max-width: 835px) {
         position: absolute;
         border-width: 0px 0 66vw 64vw;
         margin-right: -30px;
+        margin-bottom: -100px;
     }
     @media only screen and (max-width: 767px) {
         position: absolute;
@@ -437,9 +450,15 @@ h1, h2, h3 {
         width: 545px;
         height: 694px;
     }
+    @media only screen and (max-width: 575px){
+          position: absolute;
+          width: 545px;
+          margin-bottom: -70px;
+    }
     @media only screen and (max-width: 490px){
           position: absolute;
           width: 30px;
+          margin-bottom: -70px;
     }
 
 }
@@ -454,7 +473,15 @@ h1, h2, h3 {
       right: 15px;
       font-weight: 500;
       font-size: 12px;
-      margin-bottom: 26px;
+      margin-bottom: -30%;
+       @media only screen and (max-width: 1000px) {
+           display: inline;
+           margin-bottom: -55px;
+        }
+       @media only screen and (max-width: 490px) {
+           display: grid;
+           margin-bottom: -55px;
+        }
       .inside-text-b {
         font-weight: 900;
         text-decoration: underline;
@@ -475,8 +502,13 @@ h1, h2, h3 {
   border-radius: 10px;
   margin-top: 148px;
   background: $dark-grey;
+  @media only screen and (max-width: 835px) {
+     margin-top: 15px;
+     
+  }
   @media only screen and (max-width: 490px) {
      margin-bottom: 10vh;
+     width: 240px;
   }
   table {
     border-spacing: 0;
