@@ -1,7 +1,4 @@
- $blue-color: #4e74ff;
- $light-grey: #8c909d;
- $dark-grey:  #42444d;
- $main-color: #F5F5F5;
+
 
 
 /*<===========================================NAVIGATION BAR===========================================>*/
@@ -429,18 +426,16 @@ h1, h2, h3 {
     height: 0;
     border-style: solid;
     border-width: 0px 0px 48vw 58vw;;
-    border-color: transparent transparent #007bff transparent;
+    border-color: transparent transparent  $blue-color transparent;
     line-height: 0px;
-    _border-color: #000000 #000000 #007bff #000000;
-    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-    bottom: -30% !important; !important;
-   
+    _border-color:  $blue-color;
+    bottom: -30% ;
     position: absolute;
     @media only screen and (max-width: 1199px) {
           border-width: 0px 0 66vw 64vw;
-          position: absolute;
+          position: fixed!important;
           margin-right: -30px;
-        margin-bottom: -100px;
+          margin-bottom: -100px;
         }
     @media only screen and (max-width: 835px) {
         position: absolute;
@@ -464,8 +459,6 @@ h1, h2, h3 {
           width: 30px;
           margin-bottom: -70px;
     }
-
-}
     .triangle-inside-text {
       position: absolute;
       z-index: 12;
@@ -477,10 +470,11 @@ h1, h2, h3 {
       right: 15px;
       font-weight: 500;
       font-size: 12px;
-      margin-bottom: -10%;
+      margin-bottom: -15%;
        @media only screen and (max-width: 1000px) {
            display: inline;
-           margin-bottom: -55px;
+           position: absolute;
+          margin-bottom: -65%;
         }
        @media only screen and (max-width: 490px) {
            display: grid;
@@ -491,6 +485,9 @@ h1, h2, h3 {
         text-decoration: underline;
       }
     }
+
+}
+   
 #calendar {
   width: 350px; 
   background-image: linear-gradient(to bottom, #4e74ff, #4e74ff);
