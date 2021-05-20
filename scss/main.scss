@@ -4,10 +4,7 @@
 /*<===========================================NAVIGATION BAR===========================================>*/
 
 
-h1, h2, h3 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
+
 
 .container-fluid{
   padding-left: 45px!important;
@@ -59,7 +56,7 @@ h1, h2, h3 {
       }
     }
 
-  .nav > li > a:hover {
+    .nav > li > a:hover {
       background-color: transparent !important;
     }
     .navbar-brand{
@@ -420,73 +417,9 @@ h1, h2, h3 {
 }
 
 
-/*<===========================================SECOND PART===========================================>*/
-.triangle {
-     width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0px 0px 48vw 58vw;;
-    border-color: transparent transparent  $blue-color transparent;
-    line-height: 0px;
-    _border-color:  $blue-color;
-    bottom: -30% ;
-    position: absolute;
-    @media only screen and (max-width: 1199px) {
-          border-width: 0px 0 66vw 64vw;
-          position: fixed!important;
-          margin-right: -30px;
-          margin-bottom: -100px;
-        }
-    @media only screen and (max-width: 835px) {
-        position: absolute;
-        border-width: 0px 0 66vw 64vw;
-        margin-right: -30px;
-        margin-bottom: -100px;
-    }
-    @media only screen and (max-width: 767px) {
-        position: absolute;
-        border-width: 0 0 67vw 100vw;
-        width: 545px;
-        height: 694px;
-    }
-    @media only screen and (max-width: 575px){
-          position: absolute;
-          width: 473px;
-          margin-bottom: -70px;
-    }
-    @media only screen and (max-width: 490px){
-          position: absolute;
-          width: 30px;
-          margin-bottom: -70px;
-    }
-    .triangle-inside-text {
-      position: absolute;
-      z-index: 12;
-      display: inline;
-      color: white;
-      bottom: 0;
-      right: 44px;
-      font-weight: 500;
-      right: 15px;
-      font-weight: 500;
-      font-size: 12px;
-      margin-bottom: -15%;
-       @media only screen and (max-width: 1000px) {
-           display: inline;
-           position: absolute;
-          margin-bottom: -65%;
-        }
-       @media only screen and (max-width: 490px) {
-           display: grid;
-           margin-bottom: -55px;
-        }
-      .inside-text-b {
-        font-weight: 900;
-        text-decoration: underline;
-      }
-    }
 
-}
+/*<===========================================SECOND PART===========================================>*/
+
    
 #calendar {
   width: 350px; 
@@ -608,16 +541,70 @@ h1, h2, h3 {
   }
 
 
-  }
+}
+.triangle {
+     width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 0px 48vw 58vw;;
+    border-color: transparent transparent  $blue-color transparent;
+    line-height: 0px;
+    _border-color:  $blue-color;
+    bottom: -30% ;
+    position: absolute;
+    @media only screen and (max-width: 1199px) {
+          border-width: 0px 0 66vw 64vw;
+          position: fixed;
+          margin-right: -30px;
+          margin-bottom: -100px;
+        }
+    @media only screen and (max-width: 835px) {
+        position: absolute;
+        border-width: 0px 0 66vw 64vw;
+        margin-right: -30px;
+        margin-bottom: -100px;
+    }
+    @media only screen and (max-width: 767px) {
+        position: absolute;
+        border-width: 0 0 67vw 100vw;
+        width: 545px;
+        height: 694px;
+    }
+    @media only screen and (max-width: 575px){
+          position: absolute;
+          width: 473px;
+          margin-bottom: -70px;
+    }
+    @media only screen and (max-width: 490px){
+          position: absolute;
+          width: 30px;
+          margin-bottom: -70px;
+    }
+    .triangle-inside-text {
+      position: absolute;
+      z-index: 12;
+      display: inline;
+      color: white;
+      bottom: 0;
+      right: 44px;
+      font-weight: 500;
+      right: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      margin-bottom: -15%;
+       @media only screen and (max-width: 1000px) {
+           display: inline;
+           position: absolute;
+          margin-bottom: -65%;
+        }
+       @media only screen and (max-width: 490px) {
+           display: grid;
+           margin-bottom: -55px;
+        }
+      .inside-text-b {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+}
